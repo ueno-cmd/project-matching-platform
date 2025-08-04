@@ -1,0 +1,32 @@
+name = "project-matching-platform"
+main = "src/worker.js"
+compatibility_date = "2025-04-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Static Assets設定
+[assets]
+directory = "dist"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+
+# 開発環境
+[env.development]
+name = "promachi-dev"
+
+# ステージング環境  
+[env.staging]
+name = "promachi-staging"
+
+# 本番環境
+[env.production] 
+name = "promachi-prod"
+
+# D1 Database 設定
+[[d1_databases]]
+binding = "DB"
+database_name = "project-matching-platform-db"
+database_id = "e16ae3f5-eb7f-456a-9e9e-849f47a09e06"
+
+# 環境変数は後で設定
+# [env.production.vars]
+# JWT_SECRET = "will-be-set-via-wrangler-secret"
