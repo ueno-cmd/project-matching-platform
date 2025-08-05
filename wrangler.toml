@@ -21,6 +21,12 @@ name = "promachi-staging"
 [env.production] 
 name = "promatch2025"
 
+# デフォルト（本番）データベース
+[[d1_databases]]
+binding = "DB"
+database_name = "project-matching-platform-prod"
+database_id = "ae2d3382-04af-4075-8e84-e3e99ae60761"
+
 [[env.production.d1_databases]]
 binding = "DB"
 database_name = "project-matching-platform-prod"
