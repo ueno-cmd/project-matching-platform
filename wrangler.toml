@@ -1,4 +1,4 @@
-name = "project-matching-platform"
+name = "promatch2025"
 main = "src/worker.js"
 compatibility_date = "2025-04-01"
 compatibility_flags = ["nodejs_compat"]
