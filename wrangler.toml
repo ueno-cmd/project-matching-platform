@@ -27,7 +27,6 @@ database_name = "project-matching-platform-prod"
 database_id = "ae2d3382-04af-4075-8e84-e3e99ae60761"
 
 # 開発環境用D1データベース
-[env.development.d1_databases]
 [[env.development.d1_databases]]
 binding = "DB"
 database_name = "project-matching-platform-db"
